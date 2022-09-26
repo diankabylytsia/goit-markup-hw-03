@@ -1,0 +1,424 @@
+:root {
+  --top-color: #212121;
+  --medium-color: #ffffff;
+  --back-color: #2196f3;
+  --main-fs: 14px;
+  --logo-color: #000;
+  --hero-color: #757575;
+  --big-color: #2f303a;
+  --small-color: #f5f4fa;
+  --min-color: rgba(255, 255, 255, 0.6);
+  --btn-color: #188ce8;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--top-color);
+  background-color: var(--medium-color);
+}
+.link {
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.img {
+  display: block;
+}
+/*---------------HEADER--------------*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header-list {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+  margin-right: 93px;
+  text-decoration: none;
+}
+.logo-left-side {
+  color: var(--back-color);
+}
+.header-link-blue {
+  font-weight: 500;
+  font-size: var(--main-fs);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--back-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+}
+.header-link {
+  font-weight: 500;
+  font-size: var(--main-fs);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--top-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--back-color);
+}
+.header-contacts {
+  display: flex;
+  margin-left: 344px;
+  gap: 50px;
+}
+.header-contacts-list {
+  font-weight: 500;
+  font-size: var(--main-fs);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--hero-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+}
+.header-contacts-list:hover,
+.header-contacts-list:focus {
+  color: var(--back-color);
+}
+.header-contacts-link {
+  font-weight: 500;
+  font-size: var(--main-fs);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--hero-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+}
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--back-color);
+}
+/*-----------MAIN-----------*/
+
+.hero {
+  background-color: var(--big-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.container-hero {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--medium-color);
+  padding-bottom: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+/*----------????????????----------*/
+.hero-button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--medium-color);
+  background-color: var(--back-color);
+  cursor: pointer;
+  border-color: transparent;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--btn-color);
+}
+
+/*-------------FEATURES------------*/
+
+.features {
+  padding-bottom: 47px;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+
+.features-list-title {
+  font-weight: 700;
+  font-size: var(--main-fs);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--top-color);
+  height: 16px;
+  width: 270px;
+  margin-bottom: 10px;
+}
+.features-text {
+  font-size: var(--main-fs);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--hero-color);
+}
+/*--------------WORK------------*/
+.working {
+  padding-top: 47px;
+}
+.work-list {
+  display: flex;
+  justify-content: center;
+}
+.work-item {
+  margin: 0 auto;
+  margin-bottom: 94px;
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--top-color);
+  padding-bottom: 50px;
+}
+.work-image {
+  display: block;
+  max-width: 100%;
+}
+/*-------------SPECIALISTS------------*/
+.specialists {
+  background-color: var(--small-color);
+}
+.specialists-list {
+  display: flex;
+  justify-content: center;
+}
+.specialists-image {
+  display: block;
+  max-width: 100%;
+}
+.specialists-div {
+  padding: 30px 10px;
+}
+
+.top-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--top-color);
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+.specialists-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--top-color);
+  margin-bottom: 10px;
+}
+
+.specialists-item {
+  background-color: var(--medium-color);
+  width: calc((100% - 90px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px;
+}
+.specialists-item:not(:last-child) {
+  margin-right: 30px;
+}
+.specialists-text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--hero-color);
+}
+/*-------------FOOTER------------*/
+.footer-adress {
+  background-color: var(--big-color);
+}
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+  display: block;
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+.logo-right-side {
+  color: var(--medium-color);
+}
+.footer-adress-link {
+  font-style: normal;
+  font-size: var(--main-fs);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--medium-color);
+  display: block;
+  margin-bottom: 9px;
+}
+.footer-adress-link:hover,
+.footer-adress-link:focus {
+  color: var(--back-color);
+}
+.footer-contacts-link {
+  font-style: normal;
+  font-size: var(--main-fs);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--min-color);
+  display: block;
+  margin-bottom: 9px;
+}
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: var(--back-color);
+}
+.footer-contacts-link:last-child {
+  margin-bottom: 0;
+}
+/*------------PORTFOLIO---------*/
+.filter-section {
+  padding-top: 94px;
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-item {
+  margin-right: 8px;
+}
+.filter-button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--top-color);
+  background-color: var(--small-color);
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--back-color);
+  color: var(--medium-color);
+}
+.filter-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--top-color);
+  margin: 0px 0px 4px;
+}
+.filter-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--hero-color);
+}
+.top-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 30px;
+}
+.portfolio-image {
+  display: block;
+  max-width: 100%;
+}
+.portfolio-item {
+  width: 370px;
+  height: 404px;
+  flex-basis: calc(100% / 3 - 30px);
+  border: 0px 4px 4px 4px;
+}
