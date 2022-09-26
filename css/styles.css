@@ -421,3 +421,6 @@ body {
   height: 404px;
   flex-basis: calc(100% / 3 - 30px);
 }
+.portfolio-div {
+  border: 1px;
+}
