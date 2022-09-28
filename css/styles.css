@@ -168,9 +168,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--medium-color);
-  padding-bottom: 30px;
   max-width: 700px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 /*----------????????????----------*/
 .hero-button {
@@ -242,10 +242,7 @@ body {
 .work-list {
   display: flex;
   justify-content: center;
-}
-.work-item {
-  margin: 0 auto;
-  margin-bottom: 94px;
+  gap: 30px;
 }
 .title {
   font-weight: 700;
@@ -254,7 +251,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--top-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .work-image {
   display: block;
@@ -283,8 +280,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--top-color);
-  padding-bottom: 50px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .specialists-title {
   font-weight: 500;
@@ -300,7 +297,8 @@ body {
   background-color: var(--medium-color);
   width: calc((100% - 90px) / 4);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .specialists-item:not(:last-child) {
   margin-right: 30px;
@@ -313,6 +311,10 @@ body {
   color: var(--hero-color);
 }
 /*-------------FOOTER------------*/
+.adress-list li:nth-child(2) {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
 .footer-adress {
   background-color: var(--big-color);
   padding-top: 60px;
@@ -329,15 +331,15 @@ body {
 .logo-right-side {
   color: var(--medium-color);
 }
+.footer-adress-item {
+  margin-top: 20px;
+}
 .footer-adress-link {
   font-style: normal;
   font-size: var(--main-fs);
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--medium-color);
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 9px;
 }
 .footer-adress-link:hover,
 .footer-adress-link:focus {
@@ -349,14 +351,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--min-color);
-  display: block;
 }
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   color: var(--back-color);
-}
-.adress-list :first-child {
-  margin-bottom: 9px;
 }
 
 /*------------PORTFOLIO---------*/
@@ -409,7 +407,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
   gap: 30px;
 }
 .portfolio-image {
@@ -417,9 +414,7 @@ body {
   max-width: 100%;
 }
 .portfolio-item {
-  width: 370px;
-  height: 404px;
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .portfolio-info {
   padding: 20px 24px;
