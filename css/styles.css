@@ -51,6 +51,7 @@ body {
 }
 .img {
   display: block;
+  max-width: 100%;
 }
 /*---------------HEADER--------------*/
 .header {
@@ -186,8 +187,6 @@ body {
   background-color: var(--back-color);
   cursor: pointer;
   border-color: transparent;
-  display: block;
-  margin: 0 auto;
   padding: 10px 32px;
 }
 
@@ -253,10 +252,6 @@ body {
   color: var(--top-color);
   margin-bottom: 50px;
 }
-.work-image {
-  display: block;
-  max-width: 100%;
-}
 /*-------------SPECIALISTS------------*/
 .specialists {
   background-color: var(--small-color);
@@ -264,10 +259,6 @@ body {
 .specialists-list {
   display: flex;
   justify-content: center;
-}
-.specialists-image {
-  display: block;
-  max-width: 100%;
 }
 .specialists-div {
   padding: 30px 10px;
@@ -311,10 +302,7 @@ body {
   color: var(--hero-color);
 }
 /*-------------FOOTER------------*/
-.adress-list li:nth-child(2) {
-  margin-top: 9px;
-  margin-bottom: 9px;
-}
+
 .footer-adress {
   background-color: var(--big-color);
   padding-top: 60px;
@@ -331,8 +319,11 @@ body {
 .logo-right-side {
   color: var(--medium-color);
 }
-.footer-adress-item {
+.address {
   margin-top: 20px;
+}
+.footer-adress-item {
+  margin-bottom: 9px;
 }
 .footer-adress-link {
   font-style: normal;
@@ -344,6 +335,9 @@ body {
 .footer-adress-link:hover,
 .footer-adress-link:focus {
   color: var(--back-color);
+}
+.footer-contacts-list:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-contacts-link {
   font-style: normal;
@@ -409,10 +403,7 @@ body {
   align-content: center;
   gap: 30px;
 }
-.portfolio-image {
-  display: block;
-  max-width: 100%;
-}
+
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
 }
